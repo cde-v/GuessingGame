@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <title>Straight River Battleship</title>
+  </head>
+    <body>
+      <div class="navbar navbar-inverse">
+        <div class="container">
+          <a class="navbar-brand text-muted" href="#">Complex Games, LLC</a>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1>BATTLESHIP... in a straight river!</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <img class="img-responsive" src="img/BWbattleship.jpg">
+            </div>
+            <div class="col-xs-6">
+              <img class="img-responsive" src="img/StraightRiver.jpg">
+            </div>
+          </div>
+          <p>The enemy's stealth battleship is on its last legs, one hit will finish it. You have tracked your prey to the GeeGee river, the straightest and foggiest river in the world. Your fleet sits near the mouth of the mighty GeeGee and the enemy will not be able to go more than 100km upstream before it becomes too shallow.</p>
+          <h4>With only the knowledge that they are between 1km and 100km away, you must guess the range for your strike!</h4>
+        </div>
+      </div>
+
+        <h1>Choose Your Target Distance</h1>
+        <div>
+          <input placeholder="Input Distance to Fire: 1-100" class="form-control input" />
+          <h3 id='status'></h3>
+          <button class="btn btn-lg btn-danger">Confirm Firing Solution</button>
+        </div>
+        <div class='buttons'>
+          <button class="btn btn-md btn-default">Restart Simulation</button>
+          <button class="btn btn-md btn-default">Spy Network: Hint</button>
+        </div>
+        <h3>VARIABLE Attempt(s) Remaining</h3>
+
+    </body>
+</html>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
