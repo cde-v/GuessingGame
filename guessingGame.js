@@ -36,7 +36,7 @@ function playersGuessSubmission() {
 		guessListArr.push(playersGuess);
 		guessesRemaining--;
 		checkGuess();
-		$("#prevGuesses").append("<h5>" + playersGuess +", " + "</h5>");
+		$("#prevGuesses").append("<h5>" + playersGuess +" " + "</h5>");
 	}
 }
 
@@ -66,6 +66,7 @@ function playAgain(){
 	guessListArr = [];
 	updateAttemptsRem();
 	$("#status").text("");
+	$("h5").remove();
 }
 
 // When the player wins
@@ -78,7 +79,7 @@ function onWin() {
 function onTryAgain() {
 	var diff = lowerOrHigher();
 	var direction = (diff > 0 ? "overshot" : "undershot");
-	var distanceEst = Math.min(Math.abs(diff) + (5 - (Math.abs(diff)%5)), 25);
+	var distanceEst = Math.abs(diff) + (10 - (Math.abs(diff)%10));
 	$("#status").text("You " + direction + " your target by less than " + distanceEst +"km.");
 	updateAttemptsRem();
 }
