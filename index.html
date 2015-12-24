@@ -8,9 +8,7 @@
   </head>
     <body>
       <div class="navbar navbar-inverse">
-        <div class="container">
-          <a class="navbar-brand text-muted" href="#">Complex Games, LLC</a>
-        </div>
+          <a id="fakeCoName" class="navbar-brand text-muted" href="#">Complex Games, LLC</a>
       </div>
 
       <div class="jumbotron">
@@ -26,25 +24,29 @@
               <img class="img-responsive" src="img/StraightRiver.jpg">
             </div>
           </div>
-          <p>The enemy's stealth battleship is on its last legs, one hit will finish it. You have tracked your prey to the GeeGee river, the straightest and foggiest river in the world. Your fleet sits near the mouth of the mighty GeeGee and the enemy will not be able to go more than 100km upstream before it becomes too shallow.</p>
-          <h4>With only the knowledge that they are between 1km and 100km away, you must guess the range for your strike!</h4>
+          <p>The enemy's stealth battleship is on its last legs, one hit will finish it. You have tracked your prey to the GeeGee River, the straightest and foggiest river in the world. Your fleet sits near the mouth of the mighty GeeGee and the enemy will not be able to go more than 100km upstream before it becomes too shallow.</p>
+          <h4>With only the knowledge that they are between 1km and 100km away, you must take them out before it is too late!</h4>
         </div>
       </div>
 
-        <h1>Choose Your Target Distance</h1>
+        <h1>Guess Your Target's Distance</h1>
         <div>
-          <input placeholder="Input Distance to Fire: 1-100" class="form-control input" />
-          <h3 id='status'></h3>
-          <button class="btn btn-lg btn-danger">Confirm Firing Solution</button>
+          <input id="playersGuess" placeholder="Input Distance to Fire: 1-100" class="form-control input" />
+          <div id="messages">
+          	<h3 id="status"></h3>
+          	<h3 id="attemptsRem"></h3>
+          </div>
+          <button id="submitGuess" class="btn btn-lg btn-success">Confirm Firing Solution</button>
         </div>
-        <div class='buttons'>
-          <button class="btn btn-md btn-default">Restart Simulation</button>
-          <button class="btn btn-md btn-default">Spy Network: Hint</button>
+        <div id='buttons'>
+          <button class="btn btn-md btn-danger" id="restartSim">Restart Simulation</button>
+          <button class="btn btn-md btn-info" id="hint">Spy Network: Hint</button>
         </div>
-        <h3>VARIABLE Attempt(s) Remaining</h3>
 
+
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="guessingGame.js"></script>
     </body>
 </html>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

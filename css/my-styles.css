@@ -11,8 +11,28 @@ body {
   margin-top: -40px;
   padding-bottom: 10px;
   padding-top: 10px;
+  margin-bottom: -10px;
 }
 
 p {
 	font-size: 14px;
+}
+
+input {
+	margin: auto;
+	margin-bottom: 10px;
+	max-width: 30%;
+	text-align: center;
+}
+
+button {
+	margin: 10px 5px 10px 5px;
+}
+
+h3 {
+	display: inline;
+}
+
+h5 {
+	display: inline;
 }
